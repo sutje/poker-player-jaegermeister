@@ -24,6 +24,9 @@ public class Player {
     }
     
     private static int getBetForValueOfHand(JsonObject root, int valueOfHand) {
+    	if (getRoundNumber(root) == 0) {
+    		return getMinRaise(root); // Erste Runde
+    	}
     	if (valueOfHand > 1) { // Mindestens ein Zwilling
     		return getMinRaise(root);
     	}
@@ -120,6 +123,10 @@ public class Player {
     
     private static int getMyIndex(JsonObject root) {
     	return root.get("in_action").getAsInt();
+    }
+    
+    private static int getRoundNumber(JsonObject root) {
+    	return root.get("round").getAsInt();
     }
     
     private static JsonObject getMyPlayer(JsonObject root) {

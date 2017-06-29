@@ -8,7 +8,6 @@ import static org.junit.Assert.assertEquals;
 
 public class PlayerTest {
 
-    @Test
     public void testBetRequest() throws Exception {
 
         JsonElement jsonElement = new JsonParser().parse("{\"key1\": \"value1\", \"key2\": \"value2\"}");
@@ -38,7 +37,7 @@ public class PlayerTest {
         	      "\"bet\":20,"+
         	      "\"hole_cards\":["+
            	   "{" +
-               "\"rank\": \"4\"," +
+               "\"rank\": \"3\"," +
                "\"suit\": \"spades\"" +
            "}" +
         	      "],"+

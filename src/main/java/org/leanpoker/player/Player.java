@@ -25,10 +25,16 @@ public class Player {
     
     private static int getBetForValueOfHand(JsonObject root, int valueOfHand) {
     	if (getRoundNumber(root) == 0) {
-    		return getMinRaise(root); // Erste Runde
+    		int val = getMinRaise(root); // Erste Runde
+    		if (val <= 200) {
+    			return val;
+    		}
     	}
     	if (valueOfHand > 1) { // Mindestens ein Zwilling
-    		return getMinRaise(root);
+    		int val = getMinRaise(root);
+    		if (val <= 200) {
+    			return val;
+    		}
     	}
     	return 0;
     }

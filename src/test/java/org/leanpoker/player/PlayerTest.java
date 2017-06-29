@@ -34,7 +34,7 @@ public class PlayerTest {
         	      "\"name\":\"Player 2\","+
         	      "\"stack\":1000,"+
         	      "\"status\":\"active\","+
-        	      "\"bet\":20,"+
+        	      "\"bet\":2,"+
         	      "\"hole_cards\":["+
            	   "{" +
                "\"rank\": \"3\"," +
@@ -52,7 +52,7 @@ public class PlayerTest {
         	  "\"small_blind\":10,"+
         	  "\"orbits\":0,"+
         	  "\"dealer\":0,"+
-        	  "\"minimum_raise\": 240,"+
+        	  "\"minimum_raise\": 24,"+
         	  "\"in_action\": 1," +
         	  "\"community_cards\":["+
         	   "{" +
@@ -68,11 +68,11 @@ public class PlayerTest {
                   "\"suit\": \"clubs\"" +
               "}" +
         	  "],"+
-        	  "\"current_buy_in\":340,"+
+        	  "\"current_buy_in\":34,"+
         	  "\"pot\":0"+
         	"}");
 
-        assertEquals(560, Player.betRequest(jsonElement));
+        assertEquals(56, Player.betRequest(jsonElement));
 
     }
 
@@ -95,7 +95,7 @@ public class PlayerTest {
         	      "\"name\":\"Player 2\","+
         	      "\"stack\":1000,"+
         	      "\"status\":\"active\","+
-        	      "\"bet\":20,"+
+        	      "\"bet\":2,"+
         	      "\"hole_cards\":["+
            	   "{" +
                "\"rank\": \"4\"," +
@@ -113,7 +113,7 @@ public class PlayerTest {
         	  "\"small_blind\":10,"+
         	  "\"orbits\":0,"+
         	  "\"dealer\":0,"+
-        	  "\"minimum_raise\": 240,"+
+        	  "\"minimum_raise\": 24,"+
         	  "\"in_action\": 1," +
         	  "\"community_cards\":["+
         	   "{" +
@@ -129,11 +129,11 @@ public class PlayerTest {
                   "\"suit\": \"clubs\"" +
               "}" +
         	  "],"+
-        	  "\"current_buy_in\":340,"+
+        	  "\"current_buy_in\":34,"+
         	  "\"pot\":0"+
         	"}");
 
-        assertEquals(560, Player.betRequest(jsonElement));
+        assertEquals(56, Player.betRequest(jsonElement));
 
     }
 
@@ -156,7 +156,7 @@ public class PlayerTest {
         	      "\"name\":\"Player 2\","+
         	      "\"stack\":1000,"+
         	      "\"status\":\"active\","+
-        	      "\"bet\":20,"+
+        	      "\"bet\":2,"+
         	      "\"hole_cards\":["+
            	   "{" +
                "\"rank\": \"3\"," +
@@ -174,7 +174,7 @@ public class PlayerTest {
         	  "\"small_blind\":10,"+
         	  "\"orbits\":0,"+
         	  "\"dealer\":0,"+
-        	  "\"minimum_raise\": 240,"+
+        	  "\"minimum_raise\": 24,"+
         	  "\"in_action\": 1," +
         	  "\"community_cards\":["+
         	   "{" +
@@ -190,7 +190,7 @@ public class PlayerTest {
                   "\"suit\": \"clubs\"" +
               "}" +
         	  "],"+
-        	  "\"current_buy_in\":340,"+
+        	  "\"current_buy_in\":34,"+
         	  "\"pot\":0"+
         	"}");
 
